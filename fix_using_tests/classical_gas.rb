@@ -1,3 +1,5 @@
+require "pry"
+
 class GasStation
 
   attr_reader :brand, :unleaded_price
@@ -5,6 +7,10 @@ class GasStation
   def initialize(brand, unleaded_price)
     @brand = brand
     @unleaded_price = unleaded_price
+  end
+
+  def unleaded_price=(new_price)
+    @unleaded_price = new_price
   end
 
 end
